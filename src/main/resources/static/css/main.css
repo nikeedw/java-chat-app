@@ -1,8 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #fafafa;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,11 +21,9 @@ body {
     min-height: 600px;
     max-height: 600px;
     margin: 20px;
-    border: 1px solid #ccc;
-    background-color: #fff;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 .users-list {
@@ -29,7 +31,7 @@ body {
     border-right: 1px solid #ccc;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #3498db;
+    background-color: #000;
     color: #fff;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -62,10 +64,10 @@ body {
 }
 
 .user-item.active {
-    background-color: #cdebff;
-    color: #4f4f4f;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: #fff;
     padding: 10px;
-    border-radius: 5px;
 }
 
 .user-item img {
@@ -97,7 +99,7 @@ body {
 
 .message {
     margin-bottom: 5px;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 #chat-messages {
@@ -114,7 +116,7 @@ body {
 
 .user-item span.nbr-msg {
     margin-left: 10px;
-    background-color: #f8fa6f;
+    background-color: #6b4ab8;
     color: white;
     padding: 5px;
     width: 10px;
@@ -150,7 +152,8 @@ body {
 .message-input button {
     padding: 10px;
     border: none;
-    background-color: #3498db;
+    background-color: #000;
+    font-weight: 600;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
@@ -161,8 +164,8 @@ body {
     padding: 40px;
     box-sizing: border-box;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 .user-form h2 {
@@ -178,7 +181,7 @@ body {
 
 .user-form input {
     width: 100%;
-    padding: 10px 0;
+    padding: 12px 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -187,8 +190,10 @@ body {
 .user-form button {
     padding: 12px;
     border: none;
-    background-color: #3498db;
+    background-color: #000;
     color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
