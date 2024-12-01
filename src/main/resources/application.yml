@@ -1,11 +1,8 @@
 spring:
   data:
     mongodb:
-#      username: user
-#      password: user
       host: localhost
       port: 27017
       database: admin
-#      authentication-database: admin
 server:
   port: 8088
